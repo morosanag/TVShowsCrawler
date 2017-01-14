@@ -39,6 +39,21 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 ```
 
+### Instal Node.js modules
+```bash
+npm install basic-auth
+npm install body-parser
+npm install directory-tree
+npm install express
+npm install forever
+npm install forever-monitor
+npm install http
+npm install node-couchdb
+npm install node-torrent
+npm install thepiratebay
+npm install torrent-stream
+```
+
 ## Configuration
 
 Create the database used by application:
