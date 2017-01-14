@@ -22,12 +22,33 @@ Introduction
 </table>
 
 
-Installation
+## Installation
 ------------
 
+### Install couchdb:
+
+```bash
+sudo apt-get update
+sudo apt-get install couchdb
+```
+
+### Configuration
+
+Creating the database used by application:
+```bash
+curl -X PUT localhost:5984/mpsit
+```
+Import database into mpsit db from file:
+
+```bash
+curl -d @db.json -H "Content-type: application/json" -X POST http://127.0.0.1:5984/mpsit/_bulk_docs
+```
 
 
-Browser Support
+
+
+
+## Browser Support
 ---------------
 - IE 9+
 - Firefox (latest)

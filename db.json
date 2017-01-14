@@ -1,0 +1,5 @@
+{"total_rows":3,"offset":0,"rows":[
+{"id":"_design/allSeries","key":"_design/allSeries","value":{"rev":"2-0b9a93fa6251eaafb7b977428d605b87"},"doc":{"_id":"_design/allSeries","_rev":"2-0b9a93fa6251eaafb7b977428d605b87","language":"javascript","views":{"allSeries":{"map":"function(doc) {\n  if (doc.type == \"series\") {\n     emit(doc._id, doc);\n  }\n}"}}}},
+{"id":"_design/noUsers","key":"_design/noUsers","value":{"rev":"1-625a89c9577696ebc3b8552015820371"},"doc":{"_id":"_design/noUsers","_rev":"1-625a89c9577696ebc3b8552015820371","language":"javascript","views":{"noUsers":{"map":"function(doc) {\n  if (doc.type == \"users\") {\n     emit(\"noUsers\", doc.users.length);\n  }\n}"}}}},
+{"id":"users","key":"users","value":{"rev":"38-d931f573fc2374ac56078e488a81a696"},"doc":{"_id":"users","_rev":"38-d931f573fc2374ac56078e488a81a696","users":[],"type":"users"}}
+]}
