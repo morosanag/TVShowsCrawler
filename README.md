@@ -10,15 +10,24 @@ Introduction
 
 **Technologies**
 
-<table>
-  <tr>
-    <th><p align="right">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/The_Pirate_Bay_logo.svg" width="200px"/>
-</p></th>
-    <th><p align="left">
-  <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/08/1470860091couch.png" width="200px"/>
-</p></th>
-  </tr>
+<table border="0">
+   <tr>
+      <th>
+         <p align="right">
+            <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/07/1436439824nodejs-logo.png" width="200px"/>
+         </p>
+      </th>
+      <th>
+         <p align="right">
+            <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/08/1470860091couch.png" width="200px"/>
+         </p>
+      </th>
+      <th>
+         <p align="left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/The_Pirate_Bay_logo.svg" width="200px"/>
+         </p>
+      </th>
+   </tr>
 </table>
 
 
@@ -77,8 +86,7 @@ And also from (./js/requests.js):
 genericRequest("GET", "/files?path=[PATH]", null, convertToHTML, alert, null)
 ```
 
-
-
+## Run
 
 ## Browser Support
 - IE 9+
