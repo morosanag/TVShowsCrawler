@@ -1,6 +1,6 @@
 var PirateBay = require('thepiratebay');
 var couchdb = require('./couch_db');
-var globalPath = '/home/gabi/Desktop/sample_nodejs_project/new/path/';
+var globalPath = '[PATH]';
 
 function startDownload(req, res) {
   couchdb.getAllSeries(findSeries);

@@ -206,7 +206,7 @@ function getAllSeries() {
 }
 
 function showFileSystem() {
-    genericRequest("GET", "/files?path=/home/gabi/Desktop/sample_nodejs_project/new/path/", null, convertToHTML, alert, null);
+    genericRequest("GET", "/files?path=[PATH]", null, convertToHTML, alert, null);
 }
 
 function startDownload() {

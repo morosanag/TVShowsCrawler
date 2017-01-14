@@ -23,33 +23,49 @@ Introduction
 
 
 ## Installation
-------------
 
-### Install couchdb:
+### Install CouchDB:
 
 ```bash
 sudo apt-get update
 sudo apt-get install couchdb
 ```
 
-### Configuration
+### Install Node.js and npm:
 
-Creating the database used by application:
+```bash
+sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+```
+
+## Configuration
+
+Create the database used by application:
 ```bash
 curl -X PUT localhost:5984/mpsit
 ```
-Import database into mpsit db from file:
 
+Import database into mpsit db from file:
 ```bash
 curl -d @db.json -H "Content-type: application/json" -X POST http://127.0.0.1:5984/mpsit/_bulk_docs
 ```
 
+Change PATH where you want the files to be downloaded (file ./internal_js/crawler.js):
+
+```javascript
+var globalPath = '[PATH]';
+```
+
+And also from (./js/requests.js):
+```javascript
+genericRequest("GET", "/files?path=[PATH]", null, convertToHTML, alert, null)
+```
 
 
 
 
 ## Browser Support
----------------
 - IE 9+
 - Firefox (latest)
 - Chrome (latest)
