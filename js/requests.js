@@ -32,7 +32,7 @@ function genericRequest(type, path, data, callback, callback_error, refreshMetho
         contentType: "application/json",
         data: JSON.stringify(data),
         headers: {
-            "Authorization": "Basic " + btoa(localStorage.getItem('user') + ":" + localStorage.getItem('pass'))
+            "Authorization": "Basic " + btoa(localStorage.getItem('user') + ":" + CryptoJS.MD5(localStorage.getItem('pass')))
         },
         success: function(result) {
             console.log("result: " + JSON.stringify(result));
@@ -206,7 +206,7 @@ function getAllSeries() {
 }
 
 function showFileSystem() {
-    genericRequest("GET", "/files?path=[PATH]", null, convertToHTML, alert, null);
+    genericRequest("GET", "/files?path=/home/gabi/Desktop/TVShowsCrawler_repo/TVShowsCrawler/new/path/", null, convertToHTML, alert, null);
 }
 
 function startDownload() {
