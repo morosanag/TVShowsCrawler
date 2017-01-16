@@ -88,6 +88,10 @@ genericRequest("GET", "/files?path=[PATH]", null, convertToHTML, alert, null)
 
 ## Run
 
+```bash
+forever start index.js
+```
+
 ## Browser Support
 - IE 9+
 - Firefox (latest)
